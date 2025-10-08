@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS</title>
+  <script>
+    var speedRegional = 55;
+    var timeRegional = 4.2;
+    var timeAcela = 3.5;
+    var distance = speedRegional * timeRegional;
+    var acelaSpeed = '';
+
+    function calculateAcelaSpeed() {
+      acelaSpeed = distance / timeAcela;
+      var answer = document.getElementById("answer");
+      answer.innerHTML = "The Acela train travels at " + acelaSpeed + " mph";
+      document.body.style.background = "blue";
+    }
+  </script>
+</head>
+<body>
+  <p>
+    An Amtrak’s Northeast Regional train from NYC to Boston travels at 55 mph for 4.2 hours. The Acela does it in 3.5 hours. How fast does it go?
+  </p>
+  <p id="answer">...</p>
+  <a href="#" onclick="calculateAcelaSpeed()">Get the Answer</a>
+</body>
+</html>

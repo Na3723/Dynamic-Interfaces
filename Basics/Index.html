@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JS</title>
+<script>
+
+var mpg=16;
+var fuelConsumed='';
+var distanceTraveled=200;
+
+function calculateFuelConsumption() {
+  fuelConsumed = distanceTraveled/mpg;
+  var answer = document.getElementById("answer");
+  answer.innerHTML = fuelConsumed + " gallons of fuel needed";
+  document.body.style.background = "red";
+}
+
+</script>
+
+</head>
+<body>
+  <p>
+    A pickup truck's gas consumption is 16 miles per gallon. How much fuel will the pick upp truck need to travel 200 miles?
+  </p>
+  <p id="answer">
+  ...
+  </p>
+  <a href="#" onclick="calculateFuelConsumption()">Get the Answer</a>
+
+
+</body>
+</html>
